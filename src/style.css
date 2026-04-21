@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #aa3bff;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #c084fc;
+    --bg: #16171d;
+    --text: #e5e5e5;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#app {
+  min-height: 100vh;
+}
