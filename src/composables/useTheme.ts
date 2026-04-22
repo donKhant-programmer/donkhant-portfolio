@@ -1,23 +1,39 @@
-import { ref, onMounted } from "vue"
+import { ref, onMounted } from "vue";
 
-const isDark = ref(true)
+const isDark = ref(false);
 
 export function useTheme() {
-  const apply = () => {
-    document.documentElement.classList.toggle("dark", isDark.value)
-    localStorage.setItem("theme", isDark.value ? "dark" : "light")
-  }
+  const applyTheme = (dark: boolean) => {
+    const html = document.documentElement;
+
+    if (dark) {
+      html.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+
+    isDark.value = dark;
+  };
 
   const toggle = () => {
-    isDark.value = !isDark.value
-    apply()
-  }
+    applyTheme(!isDark.value);
+  };
 
   onMounted(() => {
-    const saved = localStorage.getItem("theme")
-    isDark.value = saved ? saved === "dark" : true
-    apply()
-  })
+    const saved = localStorage.getItem("theme");
 
-  return { isDark, toggle }
+    if (saved === "dark") {
+      applyTheme(true);
+    } else if (saved === "light") {
+      applyTheme(false);
+    } else {
+      // fallback to system preference
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(prefersDark);
+    }
+  });
+
+  return { isDark, toggle };
 }

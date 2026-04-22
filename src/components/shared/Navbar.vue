@@ -1,7 +1,9 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-full backdrop-blur bg-slate-900/70 border-b border-slate-800 z-50"
-  >
+  class="fixed top-0 left-0 w-full backdrop-blur z-50 border-b
+         bg-white/70 border-gray-200
+         dark:bg-slate-900/70 dark:border-slate-800"
+>
     <div
       class="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-30"
     ></div>
@@ -54,6 +56,14 @@
   Contact
 </RouterLink>
 
+<button
+    @click="toggle"
+    class="p-2 rounded-lg hover:bg-slate-800 transition"
+  >
+    <span v-if="isDark">🌙</span>
+    <span v-else>☀️</span>
+  </button>
+
 </div>
 
       <!-- Mobile Menu Button -->
@@ -80,6 +90,13 @@
         class="block text-gray-300 hover:text-white transition"
         >Contact</RouterLink
       >
+
+      <button
+    @click="toggle"
+    class="w-full text-left mt-2 px-2 py-2 rounded-lg hover:bg-slate-800 transition text-gray-300 hover:text-white"
+  >
+    Toggle Theme {{ isDark ? "🌙" : "☀️" }}
+  </button>
     </div>
   </nav>
 </template>

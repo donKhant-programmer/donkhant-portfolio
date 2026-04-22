@@ -75,7 +75,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { companies } from "@/data/companies";
 import { projects } from "@/data/projects";
 
@@ -83,6 +83,7 @@ import Section from "@/components/shared/SectionWrapper.vue";
 import ProjectCard from "@/components/shared/ProjectCard.vue";
 
 const route = useRoute();
+const router = useRouter(); // ✅ FIX
 
 const company = companies.find((c) => c.id === route.params.id);
 

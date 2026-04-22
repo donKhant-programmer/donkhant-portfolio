@@ -67,7 +67,7 @@
 import { useRoute } from "vue-router";
 import { projects } from "@/data/projects";
 import Section from "@/components/shared/SectionWrapper.vue";
-import ScreenshotGallery from "@/features/projects/ScreenshotGallery.vue";
+// import ScreenshotGallery from "@/features/projects/ScreenshotGallery.vue";
 import VideoGallery from "@/features/projects/VideoGallery.vue";
 
 const route = useRoute();
