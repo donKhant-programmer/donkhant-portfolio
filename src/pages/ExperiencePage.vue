@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20">
+  <section class="py-10">
     <h1 class="text-3xl font-bold mb-10">Experience</h1>
 
     <div class="grid md:grid-cols-2 gap-6">

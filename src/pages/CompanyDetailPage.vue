@@ -1,12 +1,15 @@
 <template>
-  <button
-    class="mb-6 text-sm text-gray-400 hover:text-white"
-    @click="$router.back()"
+
+  <section v-if="company" class="py-10 mx-auto">
+    <div class="mb-6">
+    <button
+    @click="goBack"
+    class="text-sm text-gray-400 hover:text-white flex items-center gap-2"
   >
     ← Back
   </button>
+</div>
 
-  <section v-if="company" class="py-20">
     <!-- Header -->
     <h1 class="text-3xl font-bold mb-2">
       {{ company.name }}
@@ -86,4 +89,12 @@ const company = companies.find((c) => c.id === route.params.id);
 const companyProjects = projects.filter((p) =>
   company?.projects.includes(p.id),
 );
+
+const goBack = () => {
+  if (window.history.length > 1) {
+    router.back();
+  } else {
+    router.push("/experience");
+  }
+};
 </script>

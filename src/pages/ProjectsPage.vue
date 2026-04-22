@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20">
+  <section class="py-10">
     <h1 class="text-3xl font-bold mb-10">Projects</h1>
 
     <!-- Filter -->
