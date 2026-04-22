@@ -10,6 +10,7 @@ export type Project = {
   tech: string[];
   challenges: string[];
   screenshots: string[];
+  videos: string[];
 };
 
 export const projects: Project[] = [
@@ -40,6 +41,11 @@ export const projects: Project[] = [
     ],
 
     screenshots: ["/images/ai1.png", "/images/ai2.png", "/images/ai3.png"],
+    videos: [
+      "https://www.youtube.com/embed/CyuMtbO7rfQ",
+      "https://www.youtube.com/embed/EZw9kUK7uyQ",
+      "https://www.youtube.com/embed/EZw9kUK7uyQ"
+    ]
   },
 
   // 👉 Add others later

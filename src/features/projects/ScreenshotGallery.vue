@@ -30,7 +30,7 @@
 import { ref } from "vue";
 import ImageModal from "./ImageModal.vue";
 
-defineProps<{
+const props = defineProps<{
   images: string[];
 }>();
 
@@ -42,14 +42,15 @@ const open = (i: number) => {
 
 const next = () => {
   if (activeIndex.value !== null) {
-    activeIndex.value = (activeIndex.value + 1) % images.length;
+    activeIndex.value =
+      (activeIndex.value + 1) % props.images.length;
   }
 };
 
-// Fixed prev function with overflow prevention
 const prev = () => {
   if (activeIndex.value !== null) {
-    activeIndex.value = (activeIndex.value - 1 + images.length) % images.length;
+    activeIndex.value =
+      (activeIndex.value - 1 + props.images.length) % props.images.length;
   }
 };
 </script>
