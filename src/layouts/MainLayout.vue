@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen bg-slate-900 text-white">
+  <div class="min-h-screen bg-white dark:bg-slate-900 text-black dark:text-white">
     <Navbar />
-    <main class="pt-20 px-6 max-w-6xl mx-auto">
+    <main class="pt-16 px-6 max-w-6xl mx-auto">
       <slot />
     </main>
   </div>
