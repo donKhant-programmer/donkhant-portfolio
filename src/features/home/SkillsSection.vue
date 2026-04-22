@@ -1,5 +1,5 @@
 <template>
-  <section class="py-30">
+  <section class="pb-20">
     <h2 class="text-3xl font-bold mb-10">Skills</h2>
 
     <SkillTabs :categories="skills" />

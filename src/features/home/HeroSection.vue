@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-[80vh] flex items-center">
+  <section class="mt-20">
     <div class="grid md:grid-cols-2 gap-10 items-center w-full">
       <!-- LEFT -->
       <div>
