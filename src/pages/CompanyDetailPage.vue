@@ -68,7 +68,7 @@
         />
       </div>
 
-      <p v-else class="text-gray-400">No projects listed.</p>
+      <p v-else class="text-gray-400">No projects listed. (will add soon)</p>
     </Section>
   </section>
 

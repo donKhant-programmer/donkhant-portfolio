@@ -258,5 +258,40 @@ export const projects: Project[] = [
     videos: [
       "https://www.youtube.com/embed/4AXJQzrwQtQ"
     ],
+  },
+  {
+    id: "hotel-booking",
+    title: "Hotel Booking Management System",
+    image: "/images/hotel_booking.png", // add later
+    description: "Full-stack hotel booking system with admin dashboard and payment workflow",
+    tags: ["Laravel", "PHP", "Tailwind"],
+    category: "web",
+  
+    overview:
+      "A full-stack hotel booking platform developed with Laravel, featuring user authentication, room management, booking workflows, and admin control panel.",
+  
+    features: [
+      "User registration and authentication",
+      "Room search and availability checking",
+      "Booking and payment status workflow",
+      "Admin dashboard for booking and room management",
+      "Email confirmation after booking",
+      "User profile and booking history",
+      "Review submission system",
+    ],
+  
+    tech: ["Laravel", "PHP", "MySQL", "Blade", "Tailwind CSS"],
+  
+    challenges: [
+      "Designed full system architecture from ERD and use cases",
+      "Handled booking logic with availability validation",
+      "Implemented role-based admin and user workflows",
+      "Built responsive UI directly using Tailwind without design tools",
+    ],
+  
+    screenshots: [],
+    videos: [
+      "https://www.youtube.com/embed/HaSnqN8rZAM"
+    ],
   }
 ];
