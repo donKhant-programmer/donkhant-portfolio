@@ -31,6 +31,7 @@ const featuredProjects = projects.slice(0, 3);
         :title="p.title"
         :description="p.description"
         :tags="p.tags"
+        :image="p.image"
       />
     </div>
   </section>
