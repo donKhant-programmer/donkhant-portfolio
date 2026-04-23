@@ -5,6 +5,7 @@
       :key="p.id"
       :id="p.id"
       :title="p.title"
+      :image="p.image"
       :description="p.description"
       :tags="p.tags"
     />

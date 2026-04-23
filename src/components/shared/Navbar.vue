@@ -56,13 +56,13 @@
   Contact
 </RouterLink>
 
-<button
+<!-- <button
     @click="toggle"
     class="p-2 rounded-lg hover:bg-slate-800 transition"
   >
     <span v-if="isDark">🌙</span>
     <span v-else>☀️</span>
-  </button>
+  </button> -->
 
 </div>
 
@@ -91,23 +91,23 @@
         >Contact</RouterLink
       >
 
-      <button
+      <!-- <button
     @click="toggle"
     class="w-full text-left mt-2 px-2 py-2 rounded-lg hover:bg-slate-800 transition text-gray-300 hover:text-white"
   >
     Toggle Theme {{ isDark ? "🌙" : "☀️" }}
-  </button>
+  </button> -->
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useTheme } from "@/composables/useTheme";
+// import { useTheme } from "@/composables/useTheme";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
 
 const isOpen = ref(false);
-const { toggle, isDark } = useTheme();
+// const { toggle, isDark } = useTheme();
 </script>
