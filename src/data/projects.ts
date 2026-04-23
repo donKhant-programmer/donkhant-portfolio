@@ -229,4 +229,34 @@ export const projects: Project[] = [
       "https://www.youtube.com/embed/xzhJAUYr9hA",
     ],
   },
+  {
+    id: "portfolio-vue",
+    title: "Developer Portfolio Website",
+    image: "/images/portfolio.png", // add image later
+    description: "Modern responsive portfolio built with Vue and Tailwind",
+    tags: ["Vue", "TypeScript", "UI/UX"],
+    category: "web",
+  
+    overview:
+      "A personal portfolio website showcasing projects, experience, and contact features with a clean modern UI and responsive design.",
+  
+    features: [
+      "Dynamic project and experience pages",
+      "Reusable component architecture",
+      "Responsive layout for all devices",
+      "Contact form integration with EmailJS",
+    ],
+  
+    tech: ["Vue 3", "TypeScript", "Tailwind CSS", "Vite"],
+  
+    challenges: [
+      "Designed reusable and scalable component structure",
+      "Handled routing between multiple dynamic pages",
+    ],
+  
+    screenshots: [],
+    videos: [
+      "https://www.youtube.com/embed/4AXJQzrwQtQ"
+    ],
+  }
 ];

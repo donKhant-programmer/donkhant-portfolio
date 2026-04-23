@@ -13,4 +13,4 @@
 <script setup lang="ts">
 import Navbar from "@/components/shared/Navbar.vue";
 import Footer from "@/components/shared/Footer.vue";
-</script>f
+</script>
