@@ -99,6 +99,8 @@ const success = ref(false);
 const error = ref("");
 
 const sendEmail = async () => {
+  if (loading.value) return; // 🚀 prevent spam clicks immediately
+
   if (!name.value || !email.value || !message.value) {
     error.value = "Please fill all fields";
     return;
@@ -106,6 +108,7 @@ const sendEmail = async () => {
 
   loading.value = true;
   error.value = "";
+  success.value = false;
 
   try {
     await emailjs.send(
@@ -120,13 +123,16 @@ const sendEmail = async () => {
     );
 
     success.value = true;
+
+    // clear form
     name.value = "";
     email.value = "";
     message.value = "";
+
   } catch (e) {
-  console.error("EmailJS ERROR:", e);
-  error.value = "Failed to send message. Try again.";
-} finally {
+    console.error("EmailJS ERROR:", e);
+    error.value = "Failed to send message. Try again.";
+  } finally {
     loading.value = false;
   }
 };

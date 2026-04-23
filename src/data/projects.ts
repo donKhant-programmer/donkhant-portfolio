@@ -52,7 +52,7 @@ export const projects: Project[] = [
   {
     id: "medical-ai",
     title: "AI Medical Consultation App",
-    image: "/images/ai_medical_logo.png",
+    image: "/images/ai_medical_logo.svg",
     description: "AI-powered consultation with real doctor handoff",
     tags: ["Flutter", "Firebase"],
     category: "ai",
