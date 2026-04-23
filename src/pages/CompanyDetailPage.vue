@@ -64,6 +64,7 @@
           :title="p.title"
           :description="p.description"
           :tags="p.tags"
+          :image="p.image"
         />
       </div>
 
