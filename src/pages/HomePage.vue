@@ -4,6 +4,7 @@ import SkillsSection from "@/features/home/SkillsSection.vue";
 import ProjectCard from "@/components/shared/ProjectCard.vue";
 import { projects } from "@/data/projects";
 import RecommendationSection from "@/features/home/RecommendationSection.vue";
+import RecruiterCTA from "@/features/home/RecruiterCTA.vue";
 
 // pick first 2 or 3 as featured
 const featuredProjects = projects.slice(0, 3);
@@ -38,4 +39,5 @@ const featuredProjects = projects.slice(0, 3);
   </section>
   <RecommendationSection />
   <SkillsSection />
+  <RecruiterCTA />
 </template>
