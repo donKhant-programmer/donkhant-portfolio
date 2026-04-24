@@ -107,7 +107,7 @@ export const projects: Project[] = [
 
     screenshots: [],
     videos: [
-      "https://www.youtube.com/embed/4QbdwGuEbes"
+      "https://www.youtube.com/embed/JDqC_pTc97M"
     ],
   },
 

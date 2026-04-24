@@ -13,7 +13,7 @@ export const companies: Company[] = [
   {
     id: "xlance",
     name: "Xlance Collective",
-    role: "Senior Flutter Developer",
+    role: "Front-end Developer (Mobile/Web)",
     duration: "07/2024 - Present",
     responsibilities: [
       "Built multi-service mobile applications",
