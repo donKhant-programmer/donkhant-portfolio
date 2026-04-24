@@ -28,7 +28,7 @@ export const companies: Company[] = [
       "Improved app performance and UX across modules",
     ],
     tech: ["Flutter", "Firebase", "REST API", "Vue"],
-    projects: ["ai-multi", "medical-ai", "npower", "tour", "festival"],
+    projects: ["ai-multi", "medical-ai", "hr_workflow", "tour", "festival"],
   },
 
   {

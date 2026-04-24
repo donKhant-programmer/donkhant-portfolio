@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     id: "ai-multi",
     title: "AI Multi-Industry App",
-    image: "/images/ai_hotel_logo.png",
+    image: "/images/logo.png",
     description: "AI-powered platform for hotel, school, and restaurant services",
     tags: ["Flutter", "AI"],
     category: "ai",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   {
     id: "medical-ai",
     title: "AI Medical Consultation App",
-    image: "/images/ai_medical_logo.svg",
+    image: "/images/logo.svg",
     description: "AI-powered consultation with real doctor handoff",
     tags: ["Flutter", "Firebase"],
     category: "ai",
@@ -81,9 +81,9 @@ export const projects: Project[] = [
   },
 
   {
-    id: "npower",
-    title: "Npower Workflow App",
-    image: "/images/npower_logo.png",
+    id: "hr_workflow",
+    title: "HR Workflow App",
+    image: "/images/logo.png",
     description: "Enterprise workflow and approval system",
     tags: ["Flutter", "Enterprise"],
     category: "flutter",
@@ -201,9 +201,9 @@ export const projects: Project[] = [
   },
 
   {
-    id: "boomrush",
-    title: "Boomrush 2D Game",
-    image: "/images/boomrush_logo.png",
+    id: "flutter_flame_game",
+    title: "2D Game",
+    image: "/images/logo.png",
     description: "Mobile game built with Flutter Flame",
     tags: ["Flutter", "Game"],
     category: "flutter",
