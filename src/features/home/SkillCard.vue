@@ -1,15 +1,24 @@
 <template>
   <div
-    class="p-4 bg-slate-800 rounded-xl text-center hover:scale-105 transition cursor-default"
+    class="p-4 bg-slate-800 rounded-xl text-left hover:scale-[1.03] transition"
   >
-    <div class="text-lg font-medium">
-      {{ name }}
+    <div class="font-semibold mb-2">
+      {{ skill.name }}
     </div>
+
+    <ul class="text-xs text-gray-400 space-y-1">
+      <li v-for="(d, i) in skill.details" :key="i">
+        • {{ d }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-  name: string;
+  skill: {
+    name: string;
+    details: string[];
+  };
 }>();
 </script>

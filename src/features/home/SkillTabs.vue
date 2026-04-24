@@ -19,7 +19,11 @@
 
     <!-- Content -->
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <SkillCard v-for="skill in currentItems" :key="skill" :name="skill" />
+      <SkillCard
+  v-for="skill in currentItems"
+  :key="skill.name"
+  :skill="skill"
+/>
     </div>
   </div>
 </template>
@@ -28,9 +32,14 @@
 import { ref, computed } from "vue";
 import SkillCard from "./SkillCard.vue";
 
+type SkillItem = {
+  name: string;
+  details: string[];
+};
+
 type Category = {
   name: string;
-  items: string[];
+  items: SkillItem[];
 };
 
 const props = defineProps<{

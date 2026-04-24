@@ -8,27 +8,5 @@
 
 <script setup lang="ts">
 import SkillTabs from "./SkillTabs.vue";
-
-const skills = [
-  {
-    name: "Mobile",
-    items: ["Flutter", "Dart", "Flutter Flame"],
-  },
-  {
-    name: "Frontend",
-    items: ["Vue", "TypeScript", "JavaScript"],
-  },
-  {
-    name: "Backend",
-    items: ["PHP", "Laravel", "Firebase"],
-  },
-  {
-    name: "Database",
-    items: ["MySQL", "SQLite"],
-  },
-  {
-    name: "State Management",
-    items: ["Provider", "Bloc"],
-  },
-];
+import { skills } from "@/data/skills";
 </script>
