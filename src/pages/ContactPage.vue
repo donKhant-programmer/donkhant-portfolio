@@ -1,18 +1,54 @@
 <template>
-  <section class="py-20 max-w-5xl mx-auto px-4">
-    <h1 class="text-3xl font-bold mb-12 text-center">
+  <section class="py-24 max-w-6xl mx-auto px-6">
+    
+    <h1 class="text-4xl font-bold mb-14 text-center tracking-tight">
       Get In Touch
     </h1>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid md:grid-cols-3 gap-8 items-start">
 
-      <!-- LEFT: Contact Info -->
-      <div class="space-y-6">
-        <p class="text-gray-400">
-          Feel free to reach out for collaboration, projects, or just to connect.
+      <!-- 👤 ABOUT ME -->
+      <div class="bg-slate-800 rounded-2xl p-6 space-y-5">
+
+        <div class="flex flex-col items-center text-center">
+
+          <!-- FIXED IMAGE -->
+          <div class="w-28 h-28 rounded-full bg-[#0096FF] flex items-center justify-center overflow-hidden">
+  <img
+    src="/images/profile.jpg"
+    class="w-[110%] h-[110%] object-contain scale-110"
+  />
+</div>
+
+          <h2 class="mt-4 text-2xl font-semibold">
+            Don Khant
+          </h2>
+
+          <p class="text-sm text-gray-400 mt-1">
+            Flutter Developer · Vue Frontend Developer
+          </p>
+        </div>
+
+        <p class="text-sm text-gray-400 leading-relaxed">
+          I build cross-platform mobile applications and modern frontend systems using Flutter and Vue.
+          Experienced in AI-integrated apps, real-time systems, and production-ready workflows.
         </p>
 
-        <div class="space-y-4 text-sm">
+        <div class="text-xs text-gray-500 space-y-1 pt-2 border-t border-slate-700">
+          <p>📍 Yangon, Myanmar</p>
+          <p>🌍 Open to Remote / Hybrid / Onsite (visa support available)</p>
+        </div>
+
+      </div>
+
+      <!-- 📞 CONTACT INFO -->
+      <div class="bg-slate-800 rounded-2xl p-6 space-y-6">
+
+        <h2 class="text-xl font-semibold">
+          Contact Info
+        </h2>
+
+        <div class="space-y-4 text-sm text-gray-300">
 
           <div class="flex items-center gap-3">
             <span class="text-indigo-400">📞</span>
@@ -21,7 +57,7 @@
 
           <div class="flex items-center gap-3">
             <span class="text-indigo-400">✉️</span>
-            <span>donkhant1@gmail.com</span>
+            <span class="break-all">donkhant1@gmail.com</span>
           </div>
 
           <div class="flex items-center gap-3">
@@ -41,46 +77,50 @@
         </div>
       </div>
 
-      <!-- RIGHT: Form -->
-      <form @submit.prevent="sendEmail" class="space-y-4">
+      <!-- ✉️ FORM -->
+      <form @submit.prevent="sendEmail" class="bg-slate-800 rounded-2xl p-6 space-y-4">
 
-<input
-  v-model="name"
-  type="text"
-  placeholder="Your Name"
-  class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700"
-/>
+        <h2 class="text-xl font-semibold mb-2">
+          Send Message
+        </h2>
 
-<input
-  v-model="email"
-  type="email"
-  placeholder="Your Email"
-  class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700"
-/>
+        <input
+          v-model="name"
+          type="text"
+          placeholder="Your Name"
+          class="w-full p-3 text-sm rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-indigo-500"
+        />
 
-<textarea
-  v-model="message"
-  placeholder="Message"
-  rows="4"
-  class="w-full p-3 rounded-lg bg-slate-900 border border-slate-700"
-></textarea>
+        <input
+          v-model="email"
+          type="email"
+          placeholder="Your Email"
+          class="w-full p-3 text-sm rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-indigo-500"
+        />
 
-<button
-  :disabled="loading"
-  class="w-full py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition"
->
-  {{ loading ? "Sending..." : "Send Message" }}
-</button>
+        <textarea
+          v-model="message"
+          placeholder="Message"
+          rows="5"
+          class="w-full p-3 text-sm rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-indigo-500"
+        ></textarea>
 
-<p v-if="success" class="text-green-400 text-sm">
-  Message sent successfully 🚀
-</p>
+        <button
+          :disabled="loading"
+          class="w-full py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition font-medium"
+        >
+          {{ loading ? "Sending..." : "Send Message" }}
+        </button>
 
-<p v-if="error" class="text-red-400 text-sm">
-  {{ error }}
-</p>
+        <p v-if="success" class="text-green-400 text-sm">
+          Message sent successfully 🚀
+        </p>
 
-</form>
+        <p v-if="error" class="text-red-400 text-sm">
+          {{ error }}
+        </p>
+
+      </form>
 
     </div>
   </section>
