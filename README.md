@@ -1,5 +1,36 @@
-# Vue 3 + TypeScript + Vite
+# Developer Portfolio Website
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A personal portfolio website built to showcase projects, skills, and professional experience.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Overview
+This portfolio highlights my work as a Flutter Developer while demonstrating frontend capabilities using Vue 3 and modern web technologies.
+
+## ✨ Features
+- 📁 Project showcase with detailed pages
+- 🎥 Embedded demo videos for real projects
+- 📄 Recommendation letter section
+- 📬 Functional contact form (EmailJS integration)
+- 🧠 Skills section with categorized technologies
+- 📱 Fully responsive design
+- 🔗 GitHub and external links integration
+
+## 🧠 Key Highlights
+- Built using reusable and scalable component architecture
+- Focused on clean UI/UX and performance
+- Demonstrates transition into modern frontend development (Vue)
+
+## 🛠 Tech Stack
+- Vue 3 (Composition API)
+- TypeScript
+- Tailwind CSS
+- Vite
+- EmailJS (contact form)
+
+## 🌐 Live Demo
+https://donkhant-portfolio.vercel.app/
+
+## 📂 Repository
+https://github.com/donKhant-programmer/donkhant-portfolio
+
+## 📌 Notes
+This project serves as both a personal branding platform and a demonstration of frontend development skills, complementing my mobile development background.
