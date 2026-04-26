@@ -12,8 +12,73 @@ const featuredProjects = projects.slice(0, 3);
 
 <template>
   <HeroSection />
+  <section class="mt-10 space-y-6">
+    <!-- STATS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+      <div
+        class="bg-slate-800/80 backdrop-blur rounded-xl p-4 border border-slate-700"
+      >
+        <p class="text-lg font-bold text-indigo-400">3+</p>
+        <p class="text-xs text-gray-400">Years Flutter Dev</p>
+      </div>
 
-  <section class="py-30">
+      <div
+        class="bg-slate-800/80 backdrop-blur rounded-xl p-4 border border-slate-700"
+      >
+        <p class="text-lg font-bold text-indigo-400">10+</p>
+        <p class="text-xs text-gray-400">Client Projects</p>
+      </div>
+
+      <div
+        class="bg-slate-800/80 backdrop-blur rounded-xl p-4 border border-slate-700"
+      >
+        <p class="text-lg font-bold text-indigo-400">AI</p>
+        <p class="text-xs text-gray-400">Integrated Systems</p>
+      </div>
+
+      <div
+        class="bg-slate-800/80 backdrop-blur rounded-xl p-4 border border-slate-700"
+      >
+        <p class="text-lg font-bold text-indigo-400">Vue</p>
+        <p class="text-xs text-gray-400">Frontend Experience</p>
+      </div>
+    </div>
+
+    <!-- SKILL DEPTH TAGS -->
+    <!-- <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-4">
+      <p class="text-xs text-gray-400 mb-3 uppercase tracking-wider">
+        Core Engineering Skills
+      </p>
+
+      <div class="flex flex-wrap gap-2">
+        <span
+          class="px-3 py-1 text-xs rounded-full bg-slate-800 border border-slate-700 text-gray-300 hover:border-indigo-500 transition"
+        >
+          State Management (Provider / BLoC)
+        </span>
+
+        <span
+          class="px-3 py-1 text-xs rounded-full bg-slate-800 border border-slate-700 text-gray-300 hover:border-indigo-500 transition"
+        >
+          REST API Integration
+        </span>
+
+        <span
+          class="px-3 py-1 text-xs rounded-full bg-slate-800 border border-slate-700 text-gray-300 hover:border-indigo-500 transition"
+        >
+          Firebase Auth & Realtime DB
+        </span>
+
+        <span
+          class="px-3 py-1 text-xs rounded-full bg-slate-800 border border-slate-700 text-gray-300 hover:border-indigo-500 transition"
+        >
+          Clean UI Architecture
+        </span>
+      </div>
+    </div> -->
+  </section>
+
+  <section class="py-10">
     <div class="flex justify-between items-center mb-10">
       <h2 class="text-3xl font-bold">Featured Projects</h2>
 
